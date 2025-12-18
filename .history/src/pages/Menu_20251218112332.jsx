@@ -11,7 +11,7 @@ const Menu = () => {
   
   const [activeTab, setActiveTab] = useState("combos");
 
-  
+  // ✅ Cart state comes ONLY from context
   const {
     cart,
     toggleCartItem,
@@ -19,6 +19,7 @@ const Menu = () => {
     setGuestCount,
   } = useCart();
 
+  // ✅ Open Customize tab when coming from Quote page
   useEffect(() => {
     if (location.state?.openTab === "customize") {
       setActiveTab("customize");

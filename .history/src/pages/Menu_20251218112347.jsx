@@ -34,7 +34,7 @@ const Menu = () => {
           <div className="sticky top-[64px] z-40 bg-[#013220] pt-4 pb-2 border-b border-[#24473b]">
             <div className="flex justify-center gap-8">
               
-              {/* Combos Tab */}
+              
               <button
                 onClick={() => setActiveTab("combos")}
                 className={`flex flex-col items-center border-b-[3px] pb-3 px-6 transition-all ${
