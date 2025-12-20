@@ -8,7 +8,7 @@ const Header = () => {
           <span className="material-symbols-outlined text-3xl">restaurant_menu</span>
         </div>
         <h2 className="text-white text-xl font-bold leading-tight tracking-[-0.015em]">
-          Mannah Caters
+          Mannah Caterers
         </h2>
       </div>
       <div className="flex flex-1 justify-end gap-8">

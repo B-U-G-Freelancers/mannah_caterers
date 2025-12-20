@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Phone, MessageSquare, MapPin, Mail, Clock, Instagram } from "lucide-react";
 
-const App = ({ companyName = "Mannah Caters" }) => {
+const App = ({ companyName = "Mannah Caterers" }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const App = ({ companyName = "Mannah Caters" }) => {
 
             <p className="text-gray-300 mb-8 leading-relaxed">
               Whether it's a grand wedding, a corporate gala, or an intimate
-              birthday party, Mannah Caters brings culinary excellence to your
+              birthday party, Mannah Caterers brings culinary excellence to your
               table.
             </p>
 

@@ -6,7 +6,7 @@ const Header = () => {
       <div className="flex items-center gap-4 text-white">
       
         <h2 className="text-white text-xl font-bold leading-tight tracking-[-0.015em]">
-          Mannah Caters
+          Mannah Caterers
         </h2>
       </div>
       <div className="flex flex-1 justify-end gap-8">

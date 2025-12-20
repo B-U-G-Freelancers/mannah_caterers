@@ -52,7 +52,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
-            alt="Mannah Caters Logo"
+            alt="Mannah Caterers Logo"
             className={`object-contain transition-all duration-300 ${
               scrolled ? "h-8 w-8" : "h-9 w-9"
             }`}
@@ -62,7 +62,7 @@ const Header = () => {
               scrolled ? "text-lg" : "text-xl"
             }`}
           >
-            Mannah Caters
+            Mannah Caterers
           </span>
         </Link>
 

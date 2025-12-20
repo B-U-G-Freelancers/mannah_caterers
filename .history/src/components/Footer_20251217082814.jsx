@@ -14,7 +14,7 @@ const Footer = ({ onNavigate }) => {
             <span className="material-symbols-outlined text-secondary-gold">
               restaurant_menu
             </span>
-            <h2 className="text-lg font-bold">Mannah Caters</h2>
+            <h2 className="text-lg font-bold">Mannah Caterers</h2>
           </div>
           <p className="text-slate-400 text-sm max-w-xs">
             Crafting culinary masterpieces for weddings, corporate events, and
@@ -56,7 +56,7 @@ const Footer = ({ onNavigate }) => {
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto border-t border-[#24473b] pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-        <p>© 2023 Mannah Caters. All rights reserved.</p>
+        <p>© 2023 Mannah Caterers. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-white transition-colors">
             Privacy Policy

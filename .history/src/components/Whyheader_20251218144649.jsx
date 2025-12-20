@@ -15,7 +15,7 @@ export default function Whyheader() {
         <span className="text-[#e2b857]">
           <Utensils size={24} className="fill-current" />
         </span>
-        Mannah Caters
+        Mannah Caterers
       </div>
 
       {/* NAV LINKS */}

@@ -17,7 +17,7 @@ const Header = () => {
       <Link to="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
-            alt="Mannah Caters Logo"
+            alt="Mannah Caterers Logo"
             className="h-9 w-9 object-contain"
           />
       <div className="flex items-center gap-4">
@@ -25,7 +25,7 @@ const Header = () => {
           to="/"
           className="text-white text-xl font-bold tracking-[-0.015em] hover:text-[#d4af37] transition-colors"
         >
-          Mannah Caters
+          Mannah Caterers
         </NavLink>
       </div>
 

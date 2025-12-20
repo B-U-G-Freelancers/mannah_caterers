@@ -96,7 +96,7 @@ const Stat = ({ value, label }) => {
               className="mt-6 max-w-xl text-gray-200 leading-relaxed"
             >
               From intimate gatherings to grand celebrations of 1000+ guests,
-              discover why Mannah Caters is trusted for unforgettable events.
+              discover why Mannah Caterers is trusted for unforgettable events.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap gap-4">
@@ -196,7 +196,7 @@ const Stat = ({ value, label }) => {
         >
           <div className="text-[#e2b857] text-6xl mb-6 font-serif opacity-50">“</div>
           <p className="text-[20px] md:text-[26px] font-serif italic text-gray-200">
-            Mannah Caters made our wedding unforgettable. The food and service were flawless.
+            Mannah Caterers made our wedding unforgettable. The food and service were flawless.
           </p>
           <p className="mt-8 text-[#e2b857] font-bold">David & Sarah</p>
           <p className="text-xs text-gray-400 uppercase">Wedding Reception</p>

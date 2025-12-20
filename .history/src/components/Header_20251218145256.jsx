@@ -30,11 +30,11 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/logo.png"
-            alt="Mannah Caters Logo"
+            alt="Mannah Caterers Logo"
             className="h-9 w-9 object-contain"
           />
           <span className="text-white text-xl font-bold tracking-tight">
-            Mannah Caters
+            Mannah Caterers
           </span>
         </Link>
 

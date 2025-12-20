@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h4 className="text-[#d4af37] font-bold text-base">
-            Mannah Caters
+            Mannah Caterers
           </h4>
           <p className="mt-2 leading-relaxed">
             Crafting unforgettable culinary experiences with passion,
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="md:text-right text-xs text-[#94a3b8] flex items-end">
-          © {new Date().getFullYear()} Mannah Caters.  
+          © {new Date().getFullYear()} Mannah Caterers.  
           <br />
           All rights reserved.
         </div>

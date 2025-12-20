@@ -12,7 +12,7 @@
               <span className="text-[#e2b857]">
                 <Utensils size={24} className="fill-current" />
               </span> 
-              Mannah Caters
+              Mannah Caterers
             </div>
             <div className="hidden md:flex gap-10 text-[20px] font-medium text-gray-300 tracking-wide">
   <Link to="/" className="hover:text-[#e2b857] transition-colors relative group">

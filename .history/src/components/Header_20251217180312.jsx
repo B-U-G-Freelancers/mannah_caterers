@@ -20,7 +20,7 @@ const Header = () => {
           to="/"
           className="text-white text-xl font-bold tracking-[-0.015em] hover:text-[#d4af37] transition-colors"
         >
-          Mannah Caters
+          Mannah Caterers
         </NavLink>
       </div>
 

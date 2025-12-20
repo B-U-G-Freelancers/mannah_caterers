@@ -49,7 +49,7 @@ export default function A() {
               <span className="text-[#e2b857]">
                 <Utensils size={24} className="fill-current" />
               </span> 
-              Mannah Caters
+              Mannah Caterers
             </div>
             <div className="hidden md:flex gap-10 text-[20px] font-medium text-gray-300 tracking-wide">
   <Link to="/" className="hover:text-[#e2b857] transition-colors relative group">
@@ -95,7 +95,7 @@ export default function A() {
                 variants={fadeInUp}
                 className="mt-6 max-w-xl text-[16px] leading-relaxed text-gray-200 font-light"
               >
-                From intimate gatherings to grand celebrations of 1000+ guests, discover why Mannah Caters is the preferred choice for memorable events.
+                From intimate gatherings to grand celebrations of 1000+ guests, discover why Mannah Caterers is the preferred choice for memorable events.
               </motion.p>
               <motion.div 
                 variants={fadeInUp}
@@ -223,7 +223,7 @@ export default function A() {
         >
            <div className="text-[#e2b857] text-6xl mb-8 font-serif opacity-50">“</div>
           <p className="text-[20px] md:text-[26px] font-serif italic leading-relaxed max-w-4xl mx-auto text-gray-200">
-            "Mannah Caters made our wedding absolutely magical. The food was the highlight of the evening, and the service was impeccable. Highly recommended for anyone looking for perfection."
+            "Mannah Caterers made our wedding absolutely magical. The food was the highlight of the evening, and the service was impeccable. Highly recommended for anyone looking for perfection."
           </p>
           <div className="mt-12 flex flex-col items-center">
             <motion.div 
@@ -280,11 +280,11 @@ export default function A() {
       {/* FOOTER */}
       <footer className="px-6 lg:px-20 py-8 border-t border-white/5 bg-[#0a0f0a] flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-500 gap-4">
         <div className="flex items-center gap-2 font-serif text-gray-300">
-          <span className="text-[#e2b857]"><Utensils size={16} className="fill-current" /></span> Mannah Caters
+          <span className="text-[#e2b857]"><Utensils size={16} className="fill-current" /></span> Mannah Caterers
         </div>
         <div className="flex gap-6">
         </div>
-        <span>© 2024 Mannah Caters. All rights reserved.</span>
+        <span>© 2024 Mannah Caterers. All rights reserved.</span>
       </footer>
     </div>
   );

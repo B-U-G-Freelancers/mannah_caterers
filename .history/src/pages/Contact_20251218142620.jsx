@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, MessageSquare, MapPin, Mail, Clock, Instagram, Menu, X } from 'lucide-react';
 
 
-const App = ({ companyName = "Mannah Caters" }) => {
+const App = ({ companyName = "Mannah Caterers" }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const App = ({ companyName = "Mannah Caters" }) => {
               <p className="text-yellow-400 text-sm font-semibold mb-2 uppercase tracking-wider group-hover:tracking-[0.2em] transition-all duration-300">GET IN TOUCH</p>
               <h2 className="text-white text-4xl font-bold mb-4 group-hover:text-yellow-100 transition-colors">Let's Plan Your Perfect Event</h2>
               <p className="text-gray-300 leading-relaxed hover:text-white transition-colors duration-300">
-                Whether it's a grand wedding, a corporate gala, or an intimate birthday party, Mannah Caters brings culinary excellence to your table. Contact us today to discuss your vision.
+                Whether it's a grand wedding, a corporate gala, or an intimate birthday party, Mannah Caterers brings culinary excellence to your table. Contact us today to discuss your vision.
               </p>
             </div>
 
@@ -228,7 +228,7 @@ const App = ({ companyName = "Mannah Caters" }) => {
         <footer>
           <div className="border-t border-green-800 pt-6 pb">
             <p className="text-center text-yellow-400 hover:text-yellow-200 transition-colors cursor-default">
-              © 2023 Mannah Caters. All rights reserved. Designed with elegance.
+              © 2023 Mannah Caterers. All rights reserved. Designed with elegance.
             </p>
           </div>
        

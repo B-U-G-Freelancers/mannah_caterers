@@ -69,7 +69,7 @@ export default function WhyUs() {
               className="mt-6 max-w-xl text-gray-200"
             >
               From intimate gatherings to grand celebrations of 1000+ guests,
-              discover why Mannah Caters is trusted for unforgettable events.
+              discover why Mannah Caterers is trusted for unforgettable events.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="mt-10 flex gap-4">
