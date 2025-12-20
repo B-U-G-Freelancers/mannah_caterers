@@ -216,7 +216,7 @@ export default function App() {
           hover:animate-none
           transition-all duration-300
         "
-        onClick={()=> navigate("/menu")}
+        onClick={()}
       >
         View Menu
       </button>
@@ -237,7 +237,7 @@ export default function App() {
           hover:animate-none
           transition-all duration-300
         "
-        onClick={()=>navigate("/quote")}
+        onclic
       >
         Book for Your Event
       </button>

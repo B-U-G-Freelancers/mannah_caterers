@@ -237,7 +237,7 @@ export default function App() {
           hover:animate-none
           transition-all duration-300
         "
-        onClick={()=>navigate("/quote")}
+        onclick=
       >
         Book for Your Event
       </button>
