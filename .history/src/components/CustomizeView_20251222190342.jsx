@@ -86,8 +86,8 @@ const CustomizeView = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-8 w-full max-w-350 mx-auto px-4 lg:px-0">
       {/* Desktop Category Sidebar */}
-      <aside className="hidden lg:block w-60 shrink-0">
-        <div className="sticky top-35 bg-[#022c1e] rounded-2xl border border-[#24473b] p-2">
+      <aside className="hidden lg:block w-[240px] flex-shrink-0">
+        <div className="sticky top-[140px] bg-[#022c1e] rounded-2xl border border-[#24473b] p-2">
           <div className="px-4 py-3 mb-2 border-b border-[#24473b]/50">
             <h3 className="text-white font-bold text-sm tracking-wide">
               Menu Categories
@@ -127,7 +127,7 @@ const CustomizeView = () => {
           if (!items.length) return null;
 
           return (
-            <section key={cat.id} id={cat.id} className="scroll-mt-45">
+            <section key={cat.id} id={cat.id} className="scroll-mt-[180px]">
               {/* Category Header */}
               <div className="flex items-center gap-4 mb-6">
                 <h3 className="text-xl sm:text-2xl font-bold text-[#d4af37]">

@@ -29,11 +29,11 @@ const CartSidebar = ({
 
   return (
     <div className="w-full lg:w-90 shrink-0">
-      <div className="lg:sticky lg:top-35 flex flex-col gap-6">
+      <div className="lg:sticky lg:top-[140px] flex flex-col gap-6">
         {/* Main Cart Card */}
         <div className="bg-[#022c1e] rounded-3xl border border-[#24473b] p-5 sm:p-6 shadow-2xl relative overflow-hidden">
           {/* Gold top accent */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-[#d4af37]/40 via-[#d4af37] to-[#d4af37]/40" />
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#d4af37]/40 via-[#d4af37] to-[#d4af37]/40" />
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-6 pt-2">
@@ -50,7 +50,7 @@ const CartSidebar = ({
                 No items selected
               </div>
             ) : (
-              <div className="max-h-45 sm:max-h-60 overflow-y-auto -mr-2 pr-2 flex flex-col gap-3 custom-scrollbar">
+              <div className="max-h-[180px] sm:max-h-[240px] overflow-y-auto -mr-2 pr-2 flex flex-col gap-3 custom-scrollbar">
                 {selectedItems.map((item) => (
                   <div
                     key={item.id}

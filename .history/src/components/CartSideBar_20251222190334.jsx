@@ -50,7 +50,7 @@ const CartSidebar = ({
                 No items selected
               </div>
             ) : (
-              <div className="max-h-45 sm:max-h-60 overflow-y-auto -mr-2 pr-2 flex flex-col gap-3 custom-scrollbar">
+              <div className="max-h-[180px] sm:max-h-[240px] overflow-y-auto -mr-2 pr-2 flex flex-col gap-3 custom-scrollbar">
                 {selectedItems.map((item) => (
                   <div
                     key={item.id}

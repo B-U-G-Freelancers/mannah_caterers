@@ -99,7 +99,7 @@ const Menu = () => {
                   setActiveTab("combos");
                 }}
                 className={`
-                  shrink-0
+                  flex-shrink-0
                   flex flex-col items-center
                   border-b-[3px]
                   pb-2 sm:pb-3
@@ -124,7 +124,7 @@ const Menu = () => {
                   setActiveTab("customize");
                 }}
                 className={`
-                  shrink-0
+                  flex-shrink-0
                   flex flex-col items-center
                   border-b-[3px]
                   pb-2 sm:pb-3

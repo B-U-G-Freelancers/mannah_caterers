@@ -406,7 +406,7 @@ const App = ({ companyName = "Mannah Caterers" }) => {
       </div>
 
       {/* Map Section */}
-      <section className="w-full h-64 sm:h-80 md:h-90 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out relative overflow-hidden group">
+      <section className="w-full h-64 sm:h-80 md:h-[360px] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out relative overflow-hidden group">
         <div className="absolute inset-0 bg-yellow-400/10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
         <iframe

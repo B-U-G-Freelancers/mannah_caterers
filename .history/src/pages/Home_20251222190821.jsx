@@ -568,7 +568,7 @@ group-active:transform-[rotateY(180deg)]
                       </p>
                     </div>
                     {/* BACK */}
-                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg transform-[rotateY(180deg)] backface-hidden flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
                       <p className="text-[#e0b84c] text-lg font-medium italic">
                         {item.quote}
                       </p>

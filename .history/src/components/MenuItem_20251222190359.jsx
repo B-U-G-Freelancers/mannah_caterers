@@ -25,7 +25,7 @@ const MenuItem = ({ item, isSelected, onToggle, showPopular }) => {
     >
       {showPopular && item.isPopular && (
         <div className="absolute top-2 left-2 z-10">
-          <span className="bg-[#d4af37] text-[#013220] text-[10px] ring-1 ring-[#d4af37] font-black px-2 py-0.5 rounded-full tracking-wide">
+          <span className="bg-[#d4af37] text-[#013220] text-[10px] ring-1 ring-[#d4af37] font-black px-2 py-[2px] rounded-full tracking-wide">
              Popular
           </span>
         </div>
@@ -62,7 +62,7 @@ const MenuItem = ({ item, isSelected, onToggle, showPopular }) => {
                     damping: 18,
                   }}
                 >
-                  <Check className="w-4 h-4 text-[#013220] stroke-3" />
+                  <Check className="w-4 h-4 text-[#013220] stroke-[3]" />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -86,7 +86,7 @@ const MenuItem = ({ item, isSelected, onToggle, showPopular }) => {
 
         <div className="mt-auto pt-2">
           <span
-            className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider border ${
+            className={`inline-flex items-center px-2 py-[2px] rounded text-[10px] font-bold uppercase tracking-wider border ${
               item.isVeg
                 ? "bg-[#1a4d2e]/40 border-[#1a4d2e] text-[#4ade80]"
                 : "bg-[#451a1a]/40 border-[#451a1a] text-[#f87171]"

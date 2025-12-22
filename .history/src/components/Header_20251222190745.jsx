@@ -45,7 +45,7 @@ const Header = () => {
       className={`
     fixed top-0 left-0 w-full z-50
     transition-all duration-300 ease-out
-    ${scrolled ? "h-16" : "h-20"}
+    ${scrolled ? "h-16" : "h-[80px]"}
 
     ${
       isHome

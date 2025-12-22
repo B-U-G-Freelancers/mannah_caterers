@@ -377,7 +377,7 @@ export default function App() {
             <h2 className="mt-3 text-4xl font-serif text-white md:text-5xl">
               Curated Culinary Services
             </h2>
-            <div className="mx-auto mt-6 h-px w-24 bg-[#e0b84c]/50" />
+            <div className="mx-auto mt-6 h-[1px] w-24 bg-[#e0b84c]/50" />
           </div>
 
           {/* Cards */}
@@ -459,7 +459,7 @@ export default function App() {
             <div
               className="
   relative
-  h-105 sm:h-140 md:h-180 lg:h-205
+  h-105 sm:h-[560px] md:h-[720px] lg:h-[820px]
   rounded-3xl overflow-hidden
   shadow-2xl
   border border-[#0e4a34]
@@ -481,7 +481,7 @@ export default function App() {
               />
 
               {/* Dark Gradient Overlay (for text readability) */}
-              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
               {/* Overlay Text */}
               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center px-6 z-10">
@@ -547,14 +547,14 @@ export default function App() {
                   quote: "“Natural is the new luxury.”",
                 },
               ].map((item) => (
-                <div key={item.title} className="group perspective-[1000px]">
+                <div key={item.title} className="group [perspective:1000px]">
                   <div
-                    className="relative h-72 w-full rounded-2xl transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]
-group-active:transform-[rotateY(180deg)]
+                    className="relative h-72 w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]
+group-active:[transform:rotateY(180deg)]
 "
                   >
                     {/* FRONT */}
-                    <div className="absolute inset-0 bg-[#0b4a34] rounded-2xl p-8 text-center shadow-lg backface-hidden">
+                    <div className="absolute inset-0 bg-[#0b4a34] rounded-2xl p-8 text-center shadow-lg [backface-visibility:hidden]">
                       <div className="flex justify-center mb-6">
                         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#0f5c42] text-[#e0b84c] text-2xl">
                           {item.icon}
@@ -568,7 +568,7 @@ group-active:transform-[rotateY(180deg)]
                       </p>
                     </div>
                     {/* BACK */}
-                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg transform-[rotateY(180deg)] backface-hidden flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
                       <p className="text-[#e0b84c] text-lg font-medium italic">
                         {item.quote}
                       </p>

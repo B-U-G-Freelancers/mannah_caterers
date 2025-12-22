@@ -127,7 +127,7 @@ const CustomizeView = () => {
           if (!items.length) return null;
 
           return (
-            <section key={cat.id} id={cat.id} className="scroll-mt-45">
+            <section key={cat.id} id={cat.id} className="scroll-mt-[180px]">
               {/* Category Header */}
               <div className="flex items-center gap-4 mb-6">
                 <h3 className="text-xl sm:text-2xl font-bold text-[#d4af37]">

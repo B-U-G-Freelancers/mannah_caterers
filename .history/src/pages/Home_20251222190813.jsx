@@ -549,12 +549,12 @@ export default function App() {
               ].map((item) => (
                 <div key={item.title} className="group perspective-[1000px]">
                   <div
-                    className="relative h-72 w-full rounded-2xl transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]
-group-active:transform-[rotateY(180deg)]
+                    className="relative h-72 w-full rounded-2xl transition-transform duration-700 transform-3d group-hover:[transform:rotateY(180deg)]
+group-active:[transform:rotateY(180deg)]
 "
                   >
                     {/* FRONT */}
-                    <div className="absolute inset-0 bg-[#0b4a34] rounded-2xl p-8 text-center shadow-lg backface-hidden">
+                    <div className="absolute inset-0 bg-[#0b4a34] rounded-2xl p-8 text-center shadow-lg [backface-visibility:hidden]">
                       <div className="flex justify-center mb-6">
                         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#0f5c42] text-[#e0b84c] text-2xl">
                           {item.icon}
@@ -568,7 +568,7 @@ group-active:transform-[rotateY(180deg)]
                       </p>
                     </div>
                     {/* BACK */}
-                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg transform-[rotateY(180deg)] backface-hidden flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[#0f5c42] rounded-2xl p-8 text-center shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
                       <p className="text-[#e0b84c] text-lg font-medium italic">
                         {item.quote}
                       </p>

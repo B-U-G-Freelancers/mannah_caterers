@@ -206,14 +206,14 @@ export default function WhyUs() {
 
           <motion.div
             whileHover={{ y: -5 }}
-            className="relative rounded-xl overflow-hidden bg-[#1b2636] border border-white/5 min-h-65 group"
+            className="relative rounded-xl overflow-hidden bg-[#1b2636] border border-white/5 min-h-[260px] group"
           >
             <img
               src="/why.png"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 group-active:scale-105 transition-all duration-700"
             />
-            <div className="relative p-8 h-full flex flex-col justify-end bg-linear-to-t">
+            <div className="relative p-8 h-full flex flex-col justify-end bg-gradient-to-t">
               <h3 className="font-bold text-center text-[#efd859] text-lg">
                 Taste the Difference
               </h3>
