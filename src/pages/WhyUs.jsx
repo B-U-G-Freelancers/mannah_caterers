@@ -189,15 +189,14 @@ export default function WhyUs() {
             className="relative rounded-xl overflow-hidden bg-[#1b2636] border border-white/5 min-h-[260px] shadow-lg group"
           >
             <img
-              src="https://images.unsplash.com/photo-1555244162-803834f70033"
+              src="/whypage.png"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-active:scale-105 transition-all duration-700"
             />
             <div className="relative p-8 h-full flex flex-col justify-end bg-gradient-to-t from-black/90 to-transparent">
-              <h3 className="font-bold text-lg">Taste the Difference</h3>
-              <p className="mt-2 text-[#e2b857] flex items-center gap-1 text-sm">
-                Browse Gallery <ArrowRight size={14} />
-              </p>
+             
+              <h3 className="font-bold text-center text-[#e2b857] text-lg">Taste the Difference</h3>
+              
             </div>
           </motion.div>
         </motion.div>
