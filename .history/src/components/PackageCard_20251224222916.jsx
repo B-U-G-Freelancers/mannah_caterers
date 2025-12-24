@@ -129,7 +129,7 @@ const PackageCard = ({ pkg, isOpen, onToggle, onCustomize }) => {
     setCart(pkg.items || []);
 
     // go to menu customize view
-     navigate("/menu", { state: { openTab: "customize" } })
+    navigate("/menu?tab=customize");
   }}
   className="flex-1 py-3 px-6 border border-[#d4af37] text-[#d4af37] font-bold rounded-lg hover:bg-[#d4af37] hover:text-[#013220] transition-colors"
 >

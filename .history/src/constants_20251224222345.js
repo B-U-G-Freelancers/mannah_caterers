@@ -362,35 +362,32 @@ export const PACKAGES = [
   },
 
 
-    {
+  {
     id: "platinum",
     name: "Platinum Package",
-    description: "Luxury catering experience with full spread and live counters.",
+    description: "Premium experience with live counters and full spread.",
     icon: Platinum,
     items: [
       "s1",
       "s2",
       "s3",
-      "s5",
-      "b1",
-      "b2",
-      "b5",
-      "b7",
-      "b8",
-      "d2",
-      "d6",
+      "s4",
+      "m1",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "m6",
+      "d1",
       "l1",
-      "l4",
-      "l6",
-      "l7",
+      "l2",
+      "l3",
     ],
-    // Includes mandi, live counters, premium desserts
     features: [
-      { label: "Starters", value: "4 Elite Non-Veg Dishes" },
-      { label: "Biriyani & Rice", value: "Biriyani, Mandi & Special Rice" },
-      { label: "Live Counters", value: "Pani Puri, Ice Cream & Mocktails" },
-      { label: "Desserts", value: "Multiple Premium Sweets" },
+      { label: "Starters", value: "4 Items" },
+      { label: "Biriyani", value: "Chicken, Mutton & Beef" },
+      { label: "Live Counters", value: "Salad, Ice Cream & Fruits" },
+      { label: "Dessert", value: "Included" },
     ],
   },
 ];
-
