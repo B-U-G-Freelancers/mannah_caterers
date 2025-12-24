@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSEO } from "../hooks/useSEO";
 
 import CombosView from "../components/CombosView";
 import CustomizeView from "../components/CustomizeView";
@@ -51,6 +52,12 @@ const Menu = () => {
       setActiveTab("customize");
     }
   }, [location.state]);
+useSEO({
+  title: "Catering Menu & Custom Packages | Mannah Caterers Chennai",
+  description:
+    "Browse Mannah Caterers’ catering menu featuring biriyani, starters, desserts and live counters. Choose predefined packages or customize your own menu for weddings and events in Chennai.",
+});
+
 
   /* ----------------------------------
      Swipe Handler

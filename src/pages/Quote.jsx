@@ -1,8 +1,15 @@
 import React from "react";
 import SelectedMenu from "../components/SelectedMenu";
 import QuoteForm from "../components/QuoteForm";
+import { useSEO } from "../hooks/useSEO";
 
 const Quote = () => {
+  useSEO({
+  title: "Get a Catering Quote | Wedding & Event Catering Chennai | Mannah Caterers",
+  description:
+    "Request a custom catering quote from Mannah Caterers. Wedding catering, corporate events, live counters and premium biriyani services in Chennai.",
+});
+
   return (
     <div className="flex flex-col min-h-screen bg-[#013220]">
       <main className="flex-1 flex flex-col items-center pb-20 px-4 sm:px-10 lg:px-40 pt-10">

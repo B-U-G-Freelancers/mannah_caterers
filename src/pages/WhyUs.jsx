@@ -9,9 +9,15 @@ import {
 } from "lucide-react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export default function WhyUs() {
   const navigate = useNavigate();
+useSEO({
+  title: "Why Choose Mannah Caterers | Trusted Catering in Chennai",
+  description:
+    "Discover why Mannah Caterers is a trusted name in Chennai for wedding and event catering. Halal food, fresh ingredients and premium service.",
+});
 
   /* ---------------- COUNTER ---------------- */
   const Counter = ({ from = 0, to, duration = 1.5 }) => {

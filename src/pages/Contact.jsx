@@ -9,6 +9,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 import Toast from "../components/Toast";
 import { FaICursor, FaInstagram } from "react-icons/fa";
@@ -27,6 +28,11 @@ const App = ({ companyName = "Mannah Caterers" }) => {
     eventType: "",
     notes: "",
   });
+useSEO({
+  title: "Contact Mannah Caterers | Wedding & Event Catering Chennai",
+  description:
+    "Contact Mannah Caterers for wedding and event catering in Chennai. Reach out for bookings, menu discussions and custom catering solutions.",
+});
 
   const [status, setStatus] = useState("idle");
   useEffect(() => {

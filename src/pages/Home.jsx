@@ -1,11 +1,20 @@
 import React from "react";
 // import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO.jsx";
+import TextType from "../components/TextType";
+
 export default function App() {
   const navigate = useNavigate();
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
+  useSEO({
+  title: "Mannah Caterers | Premium Wedding & Event Catering in Chennai",
+  description:
+    "Mannah Caterers offers premium wedding and event catering in Chennai. Specializing in biriyani, starters, live counters and desserts for all occasions.",
+});
+
 
   // const [showIntro, setShowIntro] = useState(true);
   // const [fadeOut, setFadeOut] = useState(false);
@@ -181,24 +190,59 @@ export default function App() {
               </span>
 
               {/* Heading */}
-              <h1
-                className="
-      text-4xl sm:text-5xl lg:text-7xl
-      font-extrabold
-      leading-tight
-      text-white
-    "
-              >
-                Crafted for
-                <span className="text-[#facc15]"> Grand Celebrations</span>
-              </h1>
+ <h1
+  className="
+    text-3xl sm:text-4xl md:text-5xl lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-white
+    tracking-tight
+    max-w-4xl
+    mx-auto
+  "
+>
+  Non-Veg Catering Specialists
+</h1>
 
-              {/* Description */}
-              <p className="mt-6 text-base sm:text-lg text-[#e6f4ee] max-w-xl mx-auto">
-                Authentic biryani, rich flavors, and large-scale perfection —
-                cooked with care for weddings, functions, and unforgettable
-                moments.
-              </p>
+<div
+  className="
+    mt-3
+    text-xl sm:text-2xl md:text-3xl
+    font-bold
+    text-[#facc15]
+    min-h-[2.5rem] sm:min-h-[3rem]
+  "
+>
+  for{" "}
+  <TextType
+    text={[
+      "Weddings",
+      "Birthday Parties",
+      "Corporate Events",
+      "Engagements",
+      "Private Functions",
+    ]}
+    typingSpeed={70}
+    pauseDuration={1400}
+    showCursor={true}
+    cursorCharacter="|"
+  />
+</div>
+
+<p
+  className="
+    mt-5
+    text-sm sm:text-base md:text-lg
+    text-[#e6f4ee]
+    max-w-2xl
+    mx-auto
+  "
+>
+  Crafted for Grand Celebrations with Authentic Non-Veg Delicacies
+</p>
+
+
+
 
               {/* CTA Buttons */}
               <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
