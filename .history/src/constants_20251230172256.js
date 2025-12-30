@@ -3,52 +3,48 @@ import Gold from "./components/gold-package";
 import Platinum from "./components/platinum-package";
 
 export const CATEGORIES = [
-  {
-    id: "biriyani",
-    label: "Biriyani & Rice",
-    title: "Biriyani & Rice Specials",
-  },
+  { id: "biriyani", label: "Biriyani & Rice", title: "Biriyani & Rice Specials" },
   { id: "starters", label: "Starters", title: "Starters" },
   { id: "desserts", label: "Desserts", title: "Desserts" },
   { id: "live", label: "Live Stalls", title: "Live Counters" },
 ];
 
+
 export const MENU_ITEMS = [
   {
-    id: "b1",
-    name: "Chicken Biriyani",
-    description:
-      "Traditional dum chicken biriyani cooked with aromatic spices.",
-    category: "biriyani",
-    isVeg: false,
-    isPopular: true,
-    image: "/chickenbiriyani.jpg",
-  },
-  {
-    id: "b2",
-    name: "Mutton Biriyani",
-    description: "Slow-cooked dum mutton biriyani with rich, bold flavors.",
-    category: "biriyani",
-    isVeg: false,
-    isPopular: true,
-    image: "/muttonbiriyani.jpg",
-  },
-  {
-    id: "b3",
-    name: "Chicken Pulao",
-    description: "Lightly spiced pulao with tender chicken pieces.",
-    category: "biriyani",
-    isVeg: false,
-    image: "/chickenpulao.jpg",
-  },
-  {
-    id: "b4",
-    name: "Mutton Pulao",
-    description: "Fragrant pulao cooked with soft, slow-cooked mutton.",
-    category: "biriyani",
-    isVeg: false,
-    image: "/muttonpolau.jpg",
-  },
+  id: "b1",
+  name: "Chicken Biriyani",
+  description: "Traditional dum chicken biriyani cooked with aromatic spices.",
+  category: "biriyani",
+  isVeg: false,
+  isPopular: true,
+  image: "/chickenbiriyani.jpg",
+},
+{
+  id: "b2",
+  name: "Mutton Biriyani",
+  description: "Slow-cooked dum mutton biriyani with rich, bold flavors.",
+  category: "biriyani",
+  isVeg: false,
+  isPopular: true,
+  image: "/muttonbiriyani.jpg",
+},
+{
+  id: "b3",
+  name: "Chicken Pulao",
+  description: "Lightly spiced pulao with tender chicken pieces.",
+  category: "biriyani",
+  isVeg: false,
+  image: "/chickenpulao.jpg",
+},
+{
+  id: "b4",
+  name: "Mutton Pulao",
+  description: "Fragrant pulao cooked with soft, slow-cooked mutton.",
+  category: "biriyani",
+  isVeg: false,
+  image: "/muttonpolau.jpg",
+},
 
   {
     id: "b5",
@@ -92,6 +88,7 @@ export const MENU_ITEMS = [
     isVeg: false,
     image: "/afganipulao.jpg",
   },
+
 
   // 🔥 STARTERS
   {
@@ -181,8 +178,7 @@ export const MENU_ITEMS = [
   {
     id: "s11",
     name: "Chicken Cutlets",
-    description:
-      "Crispy shallow-fried cutlets with spiced minced chicken meat.",
+    description: "Crispy shallow-fried cutlets with spiced minced chicken meat.",
     image: "/chickencutlets.jpg",
     isVeg: false,
     category: "starters",
@@ -213,7 +209,7 @@ export const MENU_ITEMS = [
   },
 
   // 🍨 DESSERTS
-  {
+   {
     id: "d1",
     name: "Bread Halwa",
     description: "Rich, ghee-loaded traditional dessert.",
@@ -263,7 +259,7 @@ export const MENU_ITEMS = [
     isPopular: true,
     image: "/maskabun.jpg",
   },
-  // 🎪 LIVE STALLS
+    // 🎪 LIVE STALLS
   {
     id: "l1",
     name: "Pani Puri",
@@ -328,39 +324,48 @@ export const PACKAGES = [
   {
     id: "silver",
     name: "Silver Package",
-    description: "Best for small family functions and intimate gatherings.",
+    description: "Ideal for small family functions and intimate gatherings.",
     icon: Silver,
     items: ["s1", "s2", "b1", "b3", "d1"], // Chicken 65, Afgani Kebab, Chicken Biriyani, Chicken Pulao, Bread Halwa
     features: [
-      { label: "Starters", value: "Two non-vegetarian starters" },
-      { label: "Main Course", value: "Chicken Biriyani & Pulao" },
-      { label: "Dessert", value: "One traditional sweet" },
+      { label: "Starters", value: "2 Non-Veg Items" },
+      { label: "Rice & Biriyani", value: "Chicken Biriyani + Pulao" },
+      { label: "Dessert", value: "1 Traditional Sweet" },
     ],
   },
 
-  {
+   {
     id: "gold",
     name: "Gold Package",
-    description: "Perfect for weddings and medium-scale celebrations.",
+    description: "Perfect for weddings and medium-sized celebrations.",
     icon: Gold,
     isPopular: true,
-    items: ["s1", "s2", "s3", "b1", "b2", "b5", "d2", "l4"],
+    items: [
+      "s1",
+      "s2",
+      "s3",
+      "b1",
+      "b2",
+      "b5",
+      "d2",
+      "l4",
+    ], 
     // Chicken 65, Afgani Kebab, Turkey Kebab,
     // Chicken Biriyani, Mutton Biriyani, Hyderabadi Biriyani,
     // Pineapple Kesari, Ice Cream
     features: [
-      { label: "Starters", value: "Three premium non-veg starters" },
-      { label: "Main Course", value: "Chicken, Mutton & Hyderabadi" },
-      { label: "Dessert", value: "One popular traditional sweet" },
+      { label: "Starters", value: "3 Premium Non-Veg Items" },
+      { label: "Biriyani Selection", value: "Chicken & Mutton" },
       { label: "Live Counter", value: "Ice Cream Stall" },
+      { label: "Dessert", value: "Popular Sweet" },
     ],
   },
 
-  {
+
+    {
     id: "platinum",
     name: "Platinum Package",
-    description:
-      "Luxury catering experience with full spread and live counters.",
+    description: "Luxury catering experience with full spread and live counters.",
     icon: Platinum,
     items: [
       "s1",
@@ -379,15 +384,13 @@ export const PACKAGES = [
       "l6",
       "l7",
     ],
-    // Chicken 65, Afgani Kebab, Turkey Kebab, Mutton Chops
-    // Chicken Biriyani, Mutton Biriyani, Hyderabadi Biriyani, Chicken Mandi, Mutton Mandi
-    // Pineapple Kesari, Maska Bun
-    // Pani Puri, Ice Cream, Mocktail, Chocolate Fountain
+    // Includes mandi, live counters, premium desserts
     features: [
-      { label: "Starters", value: "Four elite non-veg starters" },
-      { label: "Main Course", value: "Biriyani & Mandi Spread" },
-      { label: "Desserts", value: "Multiple premium desserts" },
-      { label: "Live Counters", value: "4 Premium Live Stalls" },
+      { label: "Starters", value: "4 Elite Non-Veg Dishes" },
+      { label: "Biriyani & Rice", value: "Biriyani, Mandi & Special Rice" },
+      { label: "Live Counters", value: "Pani Puri, Ice Cream & Mocktails" },
+      { label: "Desserts", value: "Multiple Premium Sweets" },
     ],
   },
 ];
+

@@ -12,13 +12,14 @@ import {
 import { useSEO } from "../hooks/useSEO";
 
 import Toast from "../components/Toast";
+import { FaICursor, FaInstagram } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 
 const WEB_APP_URL =
   "https://script.google.com/macros/s/AKfycby_gTClTv04-nN5LU9ZXGKad38B8TzEFfw-nz08r3hfe06J9fnldWuKvtutwQyao3dM/exec";
 
 const App = () => {
-  const [loaded, setLoaded] = useState(false);
+  // const [loaded, setLoaded] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -34,13 +35,9 @@ const App = () => {
   });
 
   const [status, setStatus] = useState("idle");
-  useEffect(() => {
-    // Add a small delay to ensure the animation triggers after the initial render
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   setLoaded(true);
+  // }, []);
   const [toast, setToast] = useState(null);
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -101,9 +98,7 @@ const App = () => {
       {/* Hero Section */}
       {/* Added animate-fade-in-up class for entrance */}
       <div
-        className={`relative h-64 sm:h-80 md:h-96 lg:h-125 overflow-hidden transition-opacity duration-1000 ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
+        className={"relative h-64 sm:h-80 md:h-96 lg:h-125 overflow-hidden transition-opacity duration-1000"}
       >
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] ease-in-out hover:scale-110"
@@ -129,9 +124,7 @@ const App = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Left Column */}
           <div
-            className={`transform transition-all duration-1000 delay-300 ${
-              loaded ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-            }`}
+            className={`transform transition-all duration-1000 delay-300 "}
           >
             <div className="mb-8 group">
               <p className="text-yellow-400 text-sm font-semibold mb-2 uppercase tracking-wider group-hover:tracking-[0.2em] transition-all duration-300">

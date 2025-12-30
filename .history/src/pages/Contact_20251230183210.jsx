@@ -12,6 +12,7 @@ import {
 import { useSEO } from "../hooks/useSEO";
 
 import Toast from "../components/Toast";
+import { FaICursor, FaInstagram } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 
 const WEB_APP_URL =
@@ -34,13 +35,9 @@ const App = () => {
   });
 
   const [status, setStatus] = useState("idle");
-  useEffect(() => {
-    // Add a small delay to ensure the animation triggers after the initial render
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   setLoaded(true);
+  // }, []);
   const [toast, setToast] = useState(null);
   const handleChange = (e) => {
     const { name, value } = e.target;

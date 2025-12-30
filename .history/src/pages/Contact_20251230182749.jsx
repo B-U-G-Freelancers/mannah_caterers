@@ -12,17 +12,19 @@ import {
 import { useSEO } from "../hooks/useSEO";
 
 import Toast from "../components/Toast";
+import { FaICursor, FaInstagram } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 
 const WEB_APP_URL =
   "https://script.google.com/macros/s/AKfycby_gTClTv04-nN5LU9ZXGKad38B8TzEFfw-nz08r3hfe06J9fnldWuKvtutwQyao3dM/exec";
 
 const App = () => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     eventDate: "",
+    guestCount: "",
     guestCount: "",
     eventType: "",
     notes: "",
@@ -34,13 +36,6 @@ const App = () => {
   });
 
   const [status, setStatus] = useState("idle");
-  useEffect(() => {
-    // Add a small delay to ensure the animation triggers after the initial render
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
   const [toast, setToast] = useState(null);
   const handleChange = (e) => {
     const { name, value } = e.target;
