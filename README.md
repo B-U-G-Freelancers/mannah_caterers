@@ -1,16 +1,62 @@
-# React + Vite
+# Mannah Caterers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Built by [B.U.G Build your genie](https://bug-freelancers.netlify.app/)** 🧞‍♂️
+> _Transforming ideas into digital reality._
 
-Currently, two official plugins are available:
+![Mannah Caterers Banner](public/logo.png) <!-- Assuming a logo exists based on typical project structures, otherwise will be just text -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A premium web experience designed for **Mannah Caterers**, offering an elegant and interactive platform for customers to explore catering services, customize menus, and request quotes.
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Interactive Menu Customization**: A seamless interface to explore and customize catering menus.
+- **Package Selection**: tailored packages including **Silver**, **Gold**, and **Platinum** to suit diverse event needs.
+- **Smart Quote System**: Instant quote generation based on selected preferences and guest count.
+- **Premium UI/UX**: Built with fluid animations and a modern aesthetic using GSAP and Framer Motion.
+- **Response Design**: Fully optimized for all devices, from desktops to mobile phones.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**:
+  - [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+- **Routing**: React Router DOM
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone <repository-url>
+    cd mannah-caters
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📞 Contact B.U.G
+
+Looking for a digital solution like this?
+Connect with **B.U.G (Build Your Genie)** to bring your vision to life.
+
+---
+
+_© 2025 Mannah Caterers. Developed by B.U.G Build your genie._
