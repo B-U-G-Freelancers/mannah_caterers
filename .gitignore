@@ -22,6 +22,7 @@ dist-ssr/
 build/
 coverage/
 
+
 # Environment variables
 .env
 .env.*
