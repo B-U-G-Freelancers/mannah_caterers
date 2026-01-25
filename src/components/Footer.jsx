@@ -112,7 +112,7 @@ const Footer = () => {
       <div className="border-t border-[#24473b]/50 py-4">
         <div className="max-w-7xl mx-auto px-6 flex justify-center">
           <a
-            href="https://buildyourgenie.com"
+            href="https://buildyourgenie.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-[#64748b] hover:text-[#d4af37] transition-colors flex items-center gap-1.5"

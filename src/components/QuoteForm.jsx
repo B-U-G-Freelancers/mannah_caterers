@@ -27,6 +27,7 @@ const QuoteForm = () => {
     eventType: "",
     guests: "",
     message: "",
+    quoteType:"menu"
   });
   const [toast, setToast] = useState(null);
   // 🔥 Convert cart IDs → menu items
@@ -42,52 +43,64 @@ const QuoteForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const payload = new FormData();
-    setStatus("sending");
-    // 🔥 Identify as MENU QUOTE
-    payload.append("type", "menu");
-    payload.append("name", formData.name);
-    payload.append("phone", formData.phone);
-    payload.append("eventType", formData.eventType);
-    payload.append("eventDate", formData.date);
-    payload.append("guestCount", formData.guests);
-    payload.append("items", itemsString);
-    payload.append("notes", formData.message);
+  if (!itemsString) {
+    setToast({
+      type: "error",
+      message: "Please select at least one menu item.",
+    });
+    setTimeout(() => setToast(null), 3000);
+    return;
+  }
 
-    try {
-      await fetch(WEB_APP_URL, {
-        method: "POST",
-        mode: "no-cors", // REQUIRED for Apps Script
-        body: payload,
-      });
+  setStatus("sending");
 
-      setToast({
-        type: "success",
-        message: "Inquiry sent successfully. We’ll contact you shortly.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        date: "",
-        eventType: "",
-        guests: "",
-        message: "",
-      });
-      setStatus("success");
-      setTimeout(() => setToast(null), 4000);
-    } catch {
-      setToast({
-        type: "error",
-        message: "Something went wrong. Please try again.",
-      });
+  const payload = new FormData();
+  payload.append("quoteType", "menu");
+  payload.append("name", formData.name);
+  payload.append("phone", formData.phone);
+  payload.append("eventType", formData.eventType);
+  payload.append("eventDate", formData.date);
+  payload.append("guestCount", formData.guests);
+  payload.append("selectedItems", itemsString);
+  payload.append("notes", formData.message);
 
-      setTimeout(() => setToast(null), 4000);
-    }
-  };
+  try {
+    await fetch(WEB_APP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: payload,
+    });
+
+    setToast({
+      type: "success",
+      message: "Inquiry sent successfully. We’ll contact you shortly.",
+    });
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      date: "",
+      eventType: "",
+      guests: "",
+      message: "",
+    });
+
+    setStatus("success");
+    setTimeout(() => setToast(null), 4000);
+  } catch {
+    setToast({
+      type: "error",
+      message: "Something went wrong. Please try again.",
+    });
+
+    setTimeout(() => setToast(null), 4000);
+  }
+};
+
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const minDate = tomorrow.toISOString().split("T")[0];

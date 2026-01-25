@@ -26,6 +26,7 @@ const App = () => {
     guestCount: "",
     eventType: "",
     notes: "",
+    quoteType: "simple",
   });
   useSEO({
     title: "Contact Mannah Caterers | Wedding & Event Catering Chennai",
@@ -58,6 +59,7 @@ const App = () => {
     payload.append("guestCount", formData.guestCount);
     payload.append("eventType", formData.eventType);
     payload.append("notes", formData.notes);
+    payload.append("quoteType", "simple");
 
     try {
       await fetch(WEB_APP_URL, {
@@ -96,10 +98,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-green-950 to-green-950 overflow-x-hidden">
-      {/* Navigation */}
-
-      {/* Hero Section */}
-      {/* Added animate-fade-in-up class for entrance */}
+     
       <div
         className={`relative h-64 sm:h-80 md:h-96 lg:h-125 overflow-hidden transition-opacity duration-1000 ${
           loaded ? "opacity-100" : "opacity-0"
